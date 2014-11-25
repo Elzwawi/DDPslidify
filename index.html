@@ -1,1 +1,179 @@
-default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate your daily intake of calories!</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Calculate your daily intake of calories!">
+  <meta name="author" content="StudentX">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Calculate your daily intake of calories!</h1>
+    <h2>Description of the application having the same name</h2>
+    <p>StudentX<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This app estimates the average daily intake of calories [in kCal].</li>
+<li>For simplicity, the calculation depends on depends on:</li>
+</ul>
+
+<ol>
+<li>Age of a person</li>
+<li>Weight of a person</li>
+<li>Height od a person</li>
+<li>Gender of a person</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Formula of the estimation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><ul>
+<li>The average calory intake is estimated based on Harris - Benedict equation (<a href="http://en.wikipedia.org/wiki/Harris-Benedict_equation">http://en.wikipedia.org/wiki/Harris-Benedict_equation</a>)</li>
+</ul></li>
+<li><p>For females:</p></li>
+</ul>
+
+<p>\[BMR = 655.1 + 9.6 * weight [kg] + 1.8 * height [cm] - 4,77 * age [years]\]</p>
+
+<ul>
+<li>For males:</li>
+</ul>
+
+<p>\[BMR = 66.5 + 13.8 * weight [kg] + 5.0 * height [cm] - 6.8 * age [years]\]</p>
+
+<ul>
+<li>where \(BMR\) is basal metabolic rate \([kCal]\)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Examples</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>for a male with \(weight = 70\) \(kg\), \(height = 175\) \(cm\) and \(age = 30\) \(years\), we get \(BMR = 1668.2\) \(kCal\)</p></li>
+<li><p>for a female with \(weight = 65\) \(kg\), \(height = 170\) \(cm\) and \(age = 30\) \(years\), we get \(BMR = 1427.5\) \(kCal\)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Some discussion</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>For extreme values the Harris - Benedict equation does not give reliable results.</p></li>
+<li><p>Given that other factors are fixed, females generally take less calories than males.</p></li>
+<li><p>A person whoperforms significantly more physical activity usually has a higher calory intake. To account for that, the \(BMR\) should be multiplied by a coefficent \(> 1\). </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the application'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Formula of the estimation'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Examples'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Some discussion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
